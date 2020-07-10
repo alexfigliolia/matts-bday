@@ -128,8 +128,20 @@ export default class App extends Component {
               index={8}
               classes={activeIndex === 8 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Your grace, I hope you have an amazing birthday! No one deserves it more than you :)<br /><br />- Your Grace 🥕</div>
+                <div className='note'>Have an amazing birthday Your Grace! No one deserves it more than you :)<br /><br />- Your Grace 🥕</div>
                 <div className='note'>Happy birthday Anna!!<br /><br />- Theodora</div>
+                <div className='note'>Happy Birthday Anna! Have a great day ahead<br /><br />- Taimur</div>
+              </div>
+            </Slide3>
+            <Slide3
+              color={this.colors[1]}
+              activeIndex={activeIndex}
+              index={9}
+              classes={activeIndex === 9 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>Happy Birthday Anna dear. May you have an amazing year full of joy and happiness<br /><br />- Shiza</div>
+                <div className='note'>🎉🎉🎉🎉🎉🐳🧦🧦🧦🧦->🦖🧦🧦🧦🧦(very old now)<br /><br />- Matt</div>
+                <div className='note'>May your day be filled with joy and laughter as you celebrate your birthday. Wishing you a beautiful day with good health and happiness forever !!! Happy Birthday Anna<br /><br />- Abhijeet</div>
               </div>
             </Slide3>
             <Slide1
@@ -137,8 +149,8 @@ export default class App extends Component {
               text2='Carta'
               color={this.colors[2]}
               activeIndex={activeIndex}
-              index={9}
-              classes={activeIndex === 9 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
+              index={10}
+              classes={activeIndex === 10 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
           </div>
         </div>
       </Fragment>
