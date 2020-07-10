@@ -105,6 +105,12 @@
   }
 }
 
+#swipe {
+  @media #{$mq-957} {
+    display: none;
+  }
+}
+
 @keyframes swipe {
   0% {
     transform: scale(1) translateX(25px);

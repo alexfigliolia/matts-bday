@@ -572,6 +572,10 @@ body {
   .swipe > img {
     height: 50px; }
 
+@media (min-width: 957px) {
+  #swipe {
+    display: none; } }
+
 @keyframes swipe {
   0% {
     transform: scale(1) translateX(25px); }

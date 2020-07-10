@@ -28,8 +28,8 @@ export default class App extends Component {
       ease: 'ease',
       transition: 'flip3d',
       freeze: false,
-      mouse: false,
-      mousewheel: false,
+      mouse: true,
+      mousewheel: true,
       arrowkey: true,
       autoplay: false,
     });
@@ -98,7 +98,6 @@ export default class App extends Component {
                 <div className='note'>Happy Happy birthday Anna! May God grant the desires of your heart. Stay happy, healthy and safe. have a blast!<br /><br />- Lorraine</div>
                 <div className='note'>Happy Birthday Anna!! I hope you’ve had a great year and that we can get back to crushing the rock wall soon!<br /><br /> - Daniel</div>
                 <div className='note'>Happy Birthday Anna! I hope get lots of socks so you don’t run out of them.<br /><br />- Himanshu</div>
-                <div className='note'>Happy Birthday! Another year closer to world domination!!<br /><br />- Hannah</div>
               </div>
             </Slide3>
             <Slide3
@@ -107,10 +106,9 @@ export default class App extends Component {
               index={6}
               classes={activeIndex === 6 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
+                <div className='note'>Happy Birthday! Another year closer to world domination!!<br /><br />- Hannah</div>
                 <div className='note'>Happy Birthday Anna, the real Whale!<br /><br />- Bassam</div>
-                <div className='note'>Happy Birthday Anna, the real Whale!<br /><br />- Reem</div>
                 <div className='note'>Happy birthday Anna! Best wishes<br /><br />- Reem</div>
-                <div className='note'>Happy birthday Anna!!<br /><br />- Theodora</div>
               </div>
             </Slide3>
             <Slide3
@@ -124,13 +122,23 @@ export default class App extends Component {
                 <div className='note'>Have a great birthday!<br /><br />- Liza</div>
               </div>
             </Slide3>
+            <Slide3
+              color={this.colors[3]}
+              activeIndex={activeIndex}
+              index={8}
+              classes={activeIndex === 8 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>Your grace, I hope you have an amazing birthday! No one deserves it more than you :)<br /><br />- Your Grace 🥕</div>
+                <div className='note'>Happy birthday Anna!!<br /><br />- Theodora</div>
+              </div>
+            </Slide3>
             <Slide1
               text1='Love,'
               text2='Carta'
               color={this.colors[2]}
               activeIndex={activeIndex}
-              index={8}
-              classes={activeIndex === 8 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
+              index={9}
+              classes={activeIndex === 9 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
           </div>
         </div>
       </Fragment>
