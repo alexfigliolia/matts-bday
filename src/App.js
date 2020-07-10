@@ -144,13 +144,22 @@ export default class App extends Component {
                 <div className='note'>May your day be filled with joy and laughter as you celebrate your birthday. Wishing you a beautiful day with good health and happiness forever !!! Happy Birthday Anna<br /><br />- Abhijeet</div>
               </div>
             </Slide3>
+            <Slide3
+              color={this.colors[0]}
+              activeIndex={activeIndex}
+              index={10}
+              classes={activeIndex === 10 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>Happy birthday baby rhino! Thanks for being awesome!<br /><br />- Vitor</div>
+              </div>
+            </Slide3>
             <Slide1
               text1='Love,'
               text2='Carta'
               color={this.colors[2]}
               activeIndex={activeIndex}
-              index={10}
-              classes={activeIndex === 10 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
+              index={11}
+              classes={activeIndex === 11 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
           </div>
         </div>
       </Fragment>
