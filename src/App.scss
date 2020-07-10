@@ -1,0 +1,30 @@
+@import 'components/reset';
+@import 'components/variables';
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  @include center;
+  background: #263143;
+  width: 100%;
+  font-family: 'Patua One', sans-serif;
+  overflow: hidden;
+    position: fixed;
+    top: 0; left: 0;
+  &>div {
+    touch-action: pan-y;
+    touch-action: pan-x;
+    height: 100%;
+    width: 100%;
+    & div {
+      @include center;
+    }
+  }
+}
+
+@import 'components/Slide1/slide1';
+@import 'components/Slide2/slide2';
+@import 'components/Slide3/slide3';
+@import 'components/Slide4/slide4';

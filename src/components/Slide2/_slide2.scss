@@ -1,0 +1,121 @@
+.slide2 {
+  @include center;
+  overflow: hidden;
+  @include headerShadow;
+  &>div {
+    @include center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    &>h1 {
+      @include center;
+      color: #fff;
+      letter-spacing: -5px;
+      margin: 0;
+      @media #{$mq-957} {
+        letter-spacing: 0;
+      }
+      &>div {
+        position: relative;
+        @include center;
+        &>h1 {
+          @include center;
+          z-index: 2;
+          transform: scale(0);
+          transition-duration: 0.3s;
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          font-size: 14vh;
+          margin: 0;
+          margin-top: -50%;
+          text-shadow: 0px 0px 15px rgba(#000, 0.25);
+          @media #{$mq-375} {
+            font-size: 11vh;
+          }
+          @media #{$mq-iphoneX} {
+            font-size: 9.5vh;
+          }
+          @media #{$mq-670} {
+            font-size: 16vh;
+          }
+        }
+        &>.fetti {
+          position: absolute;
+          top: -25px; left: calc(50% - 5px);
+          height: 50px; width: 10px;
+          z-index: 1;
+          transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          transition-duration: 0.2s;
+          border-radius: 5px;
+          transform: scaleY(0);
+          transform-origin: 50% 100%;
+          &:nth-of-type(2) {
+            left: auto;
+            top: calc(50% - 50px); right: -25px;
+            transform: rotate(90deg) scaleY(0);
+            transform-origin: 50% 100%;
+          }
+          &:nth-of-type(3) {
+            left: auto; top: auto;
+            bottom: -25px; right: calc(50% - 5px);
+            transform-origin: 50% 0%;
+          }
+          &:nth-of-type(4) {
+            left: -25px; top: calc(50% - 50px);
+            transform: rotate(-90deg) scaleY(0);
+            transform-origin: 50% 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.slide2-show {
+  &>div>h1>div {
+    &>h1 {
+      transform: scale(1);
+    }
+    &>.fetti {
+      transform: scaleY(1);
+      opacity: 0;
+      &:nth-of-type(2) {
+        transform: rotate(90deg) scaleY(1);
+        opacity: 0;
+      }
+      &:nth-of-type(4) {
+        transform: rotate(-90deg) scaleY(1);
+        opacity: 0;
+      }
+    }
+  }
+  &>div>.swipe {
+    opacity: 1;
+    animation: swipe 2s 1s infinite;
+  }
+}
+
+.swipe {
+  position: absolute;
+  bottom: 10vh;
+  opacity: 0;
+  transition: opacity 1s 1.25s;
+  &>img {
+    height: 50px;
+  }
+}
+
+@keyframes swipe {
+  0% {
+    transform: scale(1) translateX(25px);
+  }
+  25% {
+    transform: scale(0.9) translateX(25px);
+  }
+  50% {
+    transform: scale(0.9) translateX(-25px);
+  }
+  100% {
+    transform: scale(1) translateX(25px);
+  }
+}

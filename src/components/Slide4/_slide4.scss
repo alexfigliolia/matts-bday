@@ -1,0 +1,33 @@
+.slide4 {
+  @include center;
+  overflow: hidden;
+  @include headerShadow;
+  height: 100%;
+  width: 100%;
+  &>div {
+    @include center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    &>h1 {
+    	@include center;
+    	color: #fff;
+    	font-size: 16vh;
+    	text-shadow: 0px 0px 2.5px rgba(#000, 0.5);
+    	&>div {
+    		transform: translateY(50%);
+    		opacity: 0;
+    		transition-duration: 0.3s;
+    		transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    	}
+    }
+  }
+}
+
+.slide4-show {
+	&>div>h1>div {
+		transform: translateY(0%);
+    opacity: 1;
+	}
+}
