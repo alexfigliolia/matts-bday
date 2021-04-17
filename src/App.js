@@ -12,10 +12,10 @@ export default class App extends Component {
     }
     this.pw = null;
     this.colors = [
-      'linear-gradient(to bottom, #FC4958, #FC2A29)',
-      'linear-gradient(to bottom, #ed213a, #FC0967)',
-      'linear-gradient(to top, #eb3349, #f45c43)',
-      'linear-gradient(to top, #d31027, #ea384d)',
+      'linear-gradient(to right, #56ccf2, #2f80ed)',
+      'linear-gradient(to right, #8f94fb, #4e54c8)',
+      'linear-gradient(to right, #00c6ff, #0072ff)',
+      'linear-gradient(to right, #4776e6, #8e54e9)',
     ];
   }
 
@@ -41,7 +41,7 @@ export default class App extends Component {
     }, 1000);
   }
 
-  shouldComponentUpdate(nextProps, { activeIndex }) {
+  shouldComponentUpdate(np, { activeIndex }) {
     return activeIndex !== this.state.activeIndex;
   }
 
@@ -73,9 +73,9 @@ export default class App extends Component {
               index={3}
               classes={activeIndex === 3 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Let's raise a toast to one of the most inspirational individuals that I have ever known. Anna, thank you for inspiring us the way you do. It’s truly an honor to know you.<br /><br /> - Joh</div>
-                <div className='note'>Happy Bday Anna! Thank you for all your support and guidance and allowing me to learn and grow with you and the team!! I really appreciate everything and wish you the best bday ever!<br /><br /> - Junnie</div>
-                <div className='note'>Happy birthday, Anna! We are all so lucky to work with you and are inspired by your dedication to make healthcare better, one whale-filled error message at a time. All the best for this upcoming year!<br /><br />- Alekhya</div>
+                <div className='note'>"Life is not measured by the number of breaths we take, but by the moments that take our breath away." - Maya Angelou<br /><br />I hope you have many more years of breathtaking moments! Happy Birthday!<br /><br /> - Leah</div>
+                <div className='note'>Wishing you good health and happiness as you complete another trip around the sun!  Happy Birthday Matt! <br /><br /> - Nicole</div>
+                <div className='note'>Happy Birthday Matt!!  Here's to many more years of maritime technical adventures 🐋🐧🗺🧭🇺🇸!<br /><br />- Daniel</div>
               </div>
             </Slide3>
             <Slide3
@@ -84,9 +84,9 @@ export default class App extends Component {
               index={4}
               classes={activeIndex === 4 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Happy Birthday Anna! You're a great team leader, mentor, and friend, and always make it evidently clear just who the real whale is. Hope you have a great day!<br /><br />- Conor</div>
-                <div className='note'>Happy Birthday!!! You are my third favorite Anna (a close third), after after my mom and baby! Even closer or sometimes 2nd when they yell or cry at me<br /><br />- David</div>
-                <div className='note'>Happy Birthday Anna!  Here’s to another great (and less pandemic-y, less sheltered, less killer bees, and less Kanye-for-President) year!<br /><br /> - Andy</div>
+                <div className='note'>Hi Matt. I hope you have a great birthday weekend!  Happy returns to your day today and many more to come !! <br /><br />- Jim</div>
+                <div className='note'>Matt, may this year be as successful as the last! Happy Birthday!<br /><br />- Luke</div>
+                <div className='note'>Happy Birthday Matt!  Wishing you many special moments on this special day!<br /><br /> - Andy</div>
               </div>
             </Slide3>
             <Slide3
@@ -95,9 +95,9 @@ export default class App extends Component {
               index={5}
               classes={activeIndex === 5 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Happy Happy birthday Anna! May God grant the desires of your heart. Stay happy, healthy and safe. have a blast!<br /><br />- Lorraine</div>
-                <div className='note'>Happy Birthday Anna!! I hope you’ve had a great year and that we can get back to crushing the rock wall soon!<br /><br /> - Daniel</div>
-                <div className='note'>Happy Birthday Anna! I hope get lots of socks so you don’t run out of them.<br /><br />- Himanshu</div>
+                <div className='note'>Happy Birthday, Matt! To many more healthy and happy years ❤️<br /><br />- Yasmeen</div>
+                <div className='note'>Happy birthday! Hope this year is filled with success and happiness for you and your loved ones!<br /><br /> - Sameer</div>
+                <div className='note'>Happy Birthday Matt, Forget the past; look forward to the future, for the best things are yet to come.<br /><br />- Samiullah</div>
               </div>
             </Slide3>
             <Slide3
@@ -106,9 +106,9 @@ export default class App extends Component {
               index={6}
               classes={activeIndex === 6 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Happy Birthday! Another year closer to world domination!!<br /><br />- Hannah</div>
-                <div className='note'>Happy Birthday Anna, the real Whale!<br /><br />- Bassam</div>
-                <div className='note'>Happy birthday Anna! Best wishes<br /><br />- Reem</div>
+                <div className='note'>Wishing you another wonderful year of happiness and joy. Happy Birthday Matt!<br /><br />- Dayana</div>
+                <div className='note'>Happy birthday Matt!<br /><br />- Jamie</div>
+                <div className='note'>Happy Birthday Matt !! I hope you had a great one 🥳<br /><br />- Muhammad</div>
               </div>
             </Slide3>
             <Slide3
@@ -117,9 +117,9 @@ export default class App extends Component {
               index={7}
               classes={activeIndex === 7 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Happy Birthday Anna!!<br /><br />- Ratnakar</div>
-                <div className='note'>Happy Birthday Anna!<br /><br /> - Dorothy</div>
-                <div className='note'>Have a great birthday!<br /><br />- Liza</div>
+                <div className='note'>Happy birthday Matt! Hoping for a great year of health and Carta to come!<br /><br />- Conor</div>
+                <div className='note'>Happy Birthday Matt! Best wishes. Enjoy your day!!<br /><br /> - Guilherme</div>
+                <div className='note'>Happy Birthday Matt, hope this coming year is a great one!<br /><br />- Scott</div>
               </div>
             </Slide3>
             <Slide3
@@ -128,9 +128,9 @@ export default class App extends Component {
               index={8}
               classes={activeIndex === 8 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Have an amazing birthday Your Grace! No one deserves it more than you :)<br /><br />- Your Grace 🥕</div>
-                <div className='note'>Happy birthday Anna!!<br /><br />- Theodora</div>
-                <div className='note'>Happy Birthday Anna! Have a great day ahead<br /><br />- Taimur</div>
+                <div className='note'>Happy Birthday Matt! I hope you have a great  celebration!<br /><br />- Molly</div>
+                <div className='note'>Happy Birthday! Wishing you and your family the best this year and for years to come!<br /><br />- Bassam</div>
+                <div className='note'>Happy Birthday Matt, hope this is the best year yet!<br /><br />- Hannah</div>
               </div>
             </Slide3>
             <Slide3
@@ -140,8 +140,8 @@ export default class App extends Component {
               classes={activeIndex === 9 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
                 <div className='note'>Happy Birthday Anna dear. May you have an amazing year full of joy and happiness<br /><br />- Shiza</div>
-                <div className='note'>🎉🎉🎉🎉🎉🐳🧦🧦🧦🧦->🦖🧦🧦🧦🧦(very old now)<br /><br />- Matt</div>
-                <div className='note'>May your day be filled with joy and laughter as you celebrate your birthday. Wishing you a beautiful day with good health and happiness forever !!! Happy Birthday Anna<br /><br />- Abhijeet</div>
+                <div className='note'>Happy Birthday Matt!! May you have a FANTASTIC year ahead and thanks for all your support, best wises to you and your family! <br /><br />- Ron</div>
+                <div className='note'>Happy Birthday Matt 🥳🥳<br /><br />- Taimur 🧦</div>
               </div>
             </Slide3>
             <Slide3
@@ -150,7 +150,59 @@ export default class App extends Component {
               index={10}
               classes={activeIndex === 10 ? 'slide3 slide3-show' : 'slide3'}>
               <div className='notes'>
-                <div className='note'>Happy birthday baby rhino! Thanks for being awesome!<br /><br />- Vitor</div>
+                <div className='note'>Happy birthday Matt! I hope this year is the best yet!<br /><br />- Kelli</div>
+                <div className='note'>Happy birthday, Matt! Here’s to another year of health, happiness, success and lots of fun!<br /><br />- Lauren</div>
+                <div className='note'>Happy Birthday Matt!!. Here's to many more!!!<br /><br />- Ratnakar</div>
+              </div>
+            </Slide3>
+            <Slide3
+              color={this.colors[3]}
+              activeIndex={activeIndex}
+              index={11}
+              classes={activeIndex === 11 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>Happy birthday, Matt! Hope it's full of Taco Bell FHIR sauce, Reese's socks, and cats galore! <br /><br />- Alekhya</div>
+                <div className='note'>Azure light dazzling<br />Tidal waters surging<br />Have a 🐋 of a day!<br /><br />- Joh</div>
+                <div className='note'>HBD Matt! Thanks for all your help! Hope you have a great day and an even better weekend!<br /><br />- Hollis</div>
+              </div>
+            </Slide3>
+            <Slide3
+              color={this.colors[1]}
+              activeIndex={activeIndex}
+              index={12}
+              classes={activeIndex === 12 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>Happy birthday Matt, wishing you an amazing year ahead<br /><br />- Shiza</div>
+                <div className='note'>Happiest Birthday Matt! May this year be the best of all with happiness and good health 🕺<br /><br />- Saman</div>
+                <div className='note'>Happy Birthday Matt! This year will be amazing<br /><br />- Albert</div>
+              </div>
+            </Slide3>
+            <Slide3
+              color={this.colors[0]}
+              activeIndex={activeIndex}
+              index={13}
+              classes={activeIndex === 13 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>Happy Birthday Matt!  Best!!<br /><br />- Sue</div>
+                <div className='note'>Matt, I hope you have an amazing birthday!! Congrats on all you've achieved this year. You deserve the best<br /><br />- Alex</div>
+              </div>
+            </Slide3>
+            <Slide3
+              color={this.colors[3]}
+              activeIndex={activeIndex}
+              index={14}
+              classes={activeIndex === 14 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'>SALGIRA MUBARAK MACHLI JURAB KA PYAR<br />heri ya kuzaliwa kwa nyangumi anayenuka<br />Feliz cumpleaños ballena que ama mis calcetines<br />Janamdin mubarak ho badi machali ko moze pasand hai<br />с днем рождения кит который любит  носки!<br />Feliz Aniversário para a Baleia que ama as minhas meias<br />HBD 🐳 who ❤️ 🧦!<br />You will get moi nyam nyam nyam I promise, I will have sure that you have many many of my 🧦<br /><br />- Anna</div>
+              </div>
+            </Slide3>
+            <Slide3
+              color={this.colors[1]}
+              activeIndex={activeIndex}
+              index={15}
+              classes={activeIndex === 15 ? 'slide3 slide3-show' : 'slide3'}>
+              <div className='notes'>
+                <div className='note'><code>diff --git a/birthday b/birthday<br />index 63c5bcb..b287d1d 100644<br />--- a/birthday<br />+++ b/birthday<br />@@ -1,3 +1,3 @@<br />Happy Birthday<br />-Leonardo da Vinci + Matt</code><br /><br />- Mark</div>
               </div>
             </Slide3>
             <Slide1
@@ -158,8 +210,8 @@ export default class App extends Component {
               text2='Carta'
               color={this.colors[2]}
               activeIndex={activeIndex}
-              index={11}
-              classes={activeIndex === 11 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
+              index={16}
+              classes={activeIndex === 16 ? 'slide1 slide-end slide1-show' : 'slide1 slide-end'} />
           </div>
         </div>
       </Fragment>

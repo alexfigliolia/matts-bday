@@ -1,8 +1,8 @@
 {
-  "name": "annas-bday",
+  "name": "matts-bday",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexfigliolia.github.io/annas-bday",
+  "homepage": "https://alexfigliolia.github.io/matts-bday",
   "dependencies": {
     "install": "^0.13.0",
     "node-sass-chokidar": "^1.3.0",

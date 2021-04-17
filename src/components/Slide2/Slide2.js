@@ -9,7 +9,6 @@ export default class Slide2 extends Component {
 		}
 	}
 
-
 	componentDidMount() {
 		setTimeout(() => {
 			this.setState({ classes: 'slide2 slide2-show' });
@@ -40,7 +39,7 @@ export default class Slide2 extends Component {
 				<div>
 					<h1>
 						{
-							'Hey Anna!'.split('').map((letter, i) => {
+							'Hey Matt!'.split('').map((letter, i) => {
 								if (letter === ' ') {
 									return (
 										<div key={i}><h1>&nbsp;</h1></div>
